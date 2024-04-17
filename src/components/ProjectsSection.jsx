@@ -31,7 +31,7 @@ const projectsData = [
       "Si, este mismo proyecto. Portfolio Web con mi resumen, donde se puede encontrar mi CV como tambien el poder interactuar para poder ir a mi LinkedIn, Github y más. Programado con React, Next.js y Taildwind CSS.",
     image: "/images/projects/web3.png",
     tag: ["All", "Web", "Mobile"],
-    gitUrl: "/",
+    gitUrl: "https://github.com/MateoDonino/portfolio-web",
     previewUrl: "/",
   },
 ];
