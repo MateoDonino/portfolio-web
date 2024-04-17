@@ -145,7 +145,7 @@ const AboutSection = () => {
           height={500}
         />
         <div className=" mt-4 md:mt-0 text-left flex flex-col h-full">
-          <h2 className=" text-4xl font-bold mb-4 text-transparent bg-clip-text bg-gradient-to-br from-yellow-100 via-yellow-200 to-yellow-300">
+          <h2 className=" text-center text-4xl font-bold mb-4 text-transparent bg-clip-text bg-gradient-to-br from-yellow-100 via-yellow-200 to-yellow-300">
             Sobre Mi
           </h2>
           <p className=" text-[#ADB7BE] text-base lg:text-lg">
