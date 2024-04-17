@@ -8,7 +8,8 @@ const projectsData = [
     id: 1,
     title: "Api Rick and Morty",
     description:
-      "Api de Rick and Morty que permite a los usuarios buscar y visualizar informacion sobre los personajes. Consta de un campo busqueda y 3 filtros, como asi tambien poder borrarlos y resetear la busqueda, desplegada en Vercel. Desarrollado con React + Vite, Tailwind CSS y GraphQL.",
+      "Api de Rick and Morty que permite a los usuarios buscar y visualizar informacion sobre los personajes. Consta de un campo busqueda y 3 filtros, como asi tambien poder borrarlos y resetear la busqueda, desplegada en Vercel.",
+    descriptiontwo: "#React #Vite #GraphQL #TailwindCSS",
     image: "/images/projects/web1.png",
     tag: ["All", "Web"],
     gitUrl: "https://github.com/MateoDonino/dev-challenge-rickymorty",
@@ -19,6 +20,7 @@ const projectsData = [
     title: "Aplicacaion Web con NodeJS",
     description:
       "Aplicacion Web simple con Node JS, la cual nos permite ir de pagina en pagina, la interfaz es ligera y rapida, y está diseñada para usuarios que buscan una navegacion eficaz y sencilla, desplegada en Render. Desarrollada con JavaScript, Nodejs Y Bootstrap.",
+    descriptiontwo: "#JavaScript #NodeJS #Bootstrap",
     image: "/images/projects/web2.png",
     tag: ["All", "Web"],
     gitUrl: "https://github.com/MateoDonino/nodejs-project",
@@ -29,6 +31,7 @@ const projectsData = [
     title: "Porfolio Web",
     description:
       "Si, este mismo proyecto. Portfolio Web con mi resumen, donde se puede encontrar mi CV como tambien el poder interactuar para poder ir a mi LinkedIn, Github y más. Programado con React, Next.js y Taildwind CSS.",
+    descriptiontwo: "#React #Next.js #TailwindCSS",
     image: "/images/projects/web3.png",
     tag: ["All", "Web", "Mobile"],
     gitUrl: "https://github.com/MateoDonino/portfolio-web",
@@ -75,6 +78,7 @@ const ProjectsSection = () => {
             key={project.id}
             title={project.title}
             description={project.description}
+            descriptiontwo={project.descriptiontwo}
             imgUrl={project.image}
             gitUrl={project.gitUrl}
             previewUrl={project.previewUrl}
