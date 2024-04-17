@@ -3,22 +3,20 @@ import { Resend } from "resend";
 import { NextResponse } from "next/server";
 
 const resend = new Resend("re_QAXKgknX_5UrTuSWUWtkuPLUQ9dsSTc5n");
-const fromEmail = process.env.FROM_MAIL;
 
 export async function POST(req, res) {
-  const { body } = await req.json();
-  const { email, subject, message } = body;
+  const { email, subject, message, name } = await req.json();
+  console.log(email, subject, message, name);
   try {
     const data = await resend.emails.send({
-      from: fromEmail,
-      to: ["mateodonino@gmail.com", email],
+      from: "Noreply <onboarding@resend.dev>",
+      to: ["mateodonino@gmail.com"],
       subject: subject,
       react: (
         <>
-          <h1>{subject}</h1>
-          <p>Gracias por contactarte conmigo!</p>
-          <p>Nuevo mensaje: </p>
-          <p>{message}</p>
+          <h3>Email: {email}</h3>
+          <h3>Asunto: {subject}</h3>
+          <p>Mensaje: {message}</p>
         </>
       ),
     });
@@ -28,3 +26,23 @@ export async function POST(req, res) {
     return NextResponse.json({ error });
   }
 }
+
+/*
+import { NextResponse } from "next/server";
+import { Resend } from "resend";
+
+export async function GET() {
+  const resend = new Resend(process.env.RESEND_API_KEY);
+  try {
+    const { data } = await resend.emails.send({
+      from: "nextjs@example.com",
+      to: "mateodonino@gmail.com",
+      subject: "Hello from Portfolio Web",
+      html: "<h1>Hello</h1>",
+    });
+    return NextResponse.json({ data });
+  } catch (error) {
+    return NextResponse.json({ error });
+  }
+}
+*/

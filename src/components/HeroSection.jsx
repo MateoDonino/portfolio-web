@@ -1,6 +1,7 @@
 "use client";
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 import { TypeAnimation } from "react-type-animation";
 
 const HeroSection = () => {
@@ -15,9 +16,9 @@ const HeroSection = () => {
             <TypeAnimation
               sequence={[
                 // Same substring at the start will only be typed out once, initially
-                "Full Stack Developer",
-                5000, // wait 1s before replacing "Mice" with "Hamsters"
                 "Desarrollador Web",
+                5000, // wait 1s before replacing "Mice" with "Hamsters"
+                "Frontend Developer",
                 5000,
               ]}
               wrapper="span"
@@ -35,14 +36,22 @@ const HeroSection = () => {
             desafíos.
           </p>
           <div>
-            <button className="px-6 py-3 w-full sm:w-fit rounded-full mr-4 bg-gradient-to-br from-yellow-100 via-yellow-200 to-yellow-300 hover:bg-slate-200 text-black">
-              Contratame
-            </button>
-            <button className="px-1 py-1 w-full sm:w-fit rounded-full bg-gradient-to-br from-yellow-100 via-yellow-200 to-yellow-300 hover:bg-slate-800 text-white mt-3">
-              <span className="block bg-[#121212] hover:bg-gray-900 rounded-full px-5 py-2">
-                Descargar CV
-              </span>
-            </button>
+            {/*<Link href="/contact">
+              <button className="px-6 py-3 w-full sm:w-fit rounded-full mr-4 bg-gradient-to-br from-yellow-100 via-yellow-200 to-yellow-300 hover:bg-slate-200 text-black">
+                Contratame
+              </button>
+            </Link>*/}
+
+            <Link
+              href="https://drive.google.com/file/d/1lKdALNYEZJkOuI4FBfFsh6MjeSQQjghC/view?usp=drive_link"
+              target="_blank"
+            >
+              <button className="px-1 py-1 w-full sm:w-fit rounded-full bg-gradient-to-br from-yellow-100 via-yellow-200 to-yellow-300 hover:bg-slate-800 text-white mt-3">
+                <span className="block bg-[#121212] hover:bg-gray-900 rounded-full px-5 py-2">
+                  Descargar CV
+                </span>
+              </button>
+            </Link>
           </div>
         </div>
         <div className="col-span-5 place-self-center mt-4 lg:mt-0">
