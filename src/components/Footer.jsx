@@ -3,9 +3,10 @@ import React from "react";
 const Footer = () => {
   return (
     <footer className=" footer text-white">
-      <div className=" container p-12 flex justify-between mx-auto">
-        <span className=" text-gray-500"></span>
-        <p className=" text-gray-500">Todos los derechos reservados ©</p>
+      <div className=" container p-12 text-center mx-auto">
+        <p className=" text-center text-transparent bg-clip-text bg-gradient-to-br from-black via-white to-black">
+          Todos los derechos reservados ©
+        </p>
       </div>
     </footer>
   );
