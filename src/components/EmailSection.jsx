@@ -44,7 +44,8 @@ const EmailSection = () => {
         <p className="text-[#ADB7BE] mb-4 max-w-md">
           Actualmente estoy en busqueda de nuevas oportunidades laborales, mi
           casilla de mensajes siempre está abierta. Dejame un mensaje y me
-          pondre en contacto a la brevedad.
+          pondre en contacto a la brevedad. Tambien estoy muy atento a mi
+          casilla de LinkedIn.
         </p>
         <div className=" socials flex flex-row gap-2">
           <Link

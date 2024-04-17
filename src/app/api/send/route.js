@@ -5,8 +5,8 @@ import { NextResponse } from "next/server";
 const resend = new Resend("re_QAXKgknX_5UrTuSWUWtkuPLUQ9dsSTc5n");
 
 export async function POST(req, res) {
-  const { email, subject, message, name } = await req.json();
-  console.log(email, subject, message, name);
+  const { name, email, subject, message } = await req.json();
+  console.log(name, email, subject, message);
   try {
     const data = await resend.emails.send({
       from: "Noreply <onboarding@resend.dev>",
@@ -14,9 +14,8 @@ export async function POST(req, res) {
       subject: subject,
       react: (
         <>
-          <h3>Email: {email}</h3>
-          <h3>Asunto: {subject}</h3>
-          <p>Mensaje: {message}</p>
+          <p>{message}</p>
+          <h4>Email: {email}</h4>
         </>
       ),
     });

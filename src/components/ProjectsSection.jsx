@@ -6,10 +6,10 @@ import ProjectTag from "./ProjectTag";
 const projectsData = [
   {
     id: 1,
-    title: "Api Rick and Morty 1",
+    title: "Api Rick and Morty",
     description:
       "Api de Rick and Morty que permite a los usuarios buscar y visualizar informacion sobre los personajes. Consta de un campo busqueda y 3 filtros, como asi tambien poder borrarlos y resetear la busqueda, desplegada en Vercel. Desarrollado con React + Vite, Tailwind CSS y GraphQL.",
-    image: "/images/projects/web1.PNG",
+    image: "/images/projects/web1.png",
     tag: ["All", "Web"],
     gitUrl: "https://github.com/MateoDonino/dev-challenge-rickymorty",
     previewUrl: "https://dev-challenge-rickymorty.vercel.app/",
@@ -19,43 +19,17 @@ const projectsData = [
     title: "Aplicacaion Web con NodeJS",
     description:
       "Aplicacion Web simple con Node JS, la cual nos permite ir de pagina en pagina, la interfaz es ligera y rapida, y está diseñada para usuarios que buscan una navegacion eficaz y sencilla, desplegada en Render. Desarrollada con JavaScript, Nodejs Y Bootstrap.",
-    image: "/images/projects/web3.PNG",
+    image: "/images/projects/web2.png",
     tag: ["All", "Web"],
     gitUrl: "https://github.com/MateoDonino/nodejs-project",
     previewUrl: "https://nodejs-project-chyw.onrender.com/",
   },
   {
     id: 3,
-    title: "Api Rick and Morty 3",
-    description: "Api de rick and morty",
-    image: "/images/projects/web.PNG",
-    tag: ["All", "Web"],
-    gitUrl: "/",
-    previewUrl: "/",
-  },
-  {
-    id: 4,
-    title: "Api Rick and Morty 4",
-    description: "Api de rick and morty",
-    image: "/images/projects/web.PNG",
-    tag: ["All", "Web"],
-    gitUrl: "/",
-    previewUrl: "/",
-  },
-  {
-    id: 5,
-    title: "Api Rick and Morty 5",
-    description: "Api de rick and morty",
-    image: "/images/projects/web.PNG",
-    tag: ["All", "Web"],
-    gitUrl: "/",
-    previewUrl: "/",
-  },
-  {
-    id: 6,
-    title: "Api Rick and Morty 6",
-    description: "Api de rick and morty",
-    image: "/images/projects/web.PNG",
+    title: "Porfolio Web",
+    description:
+      "Si, este mismo proyecto. Portfolio Web con mi resumen, donde se puede encontrar mi CV como tambien el poder interactuar para poder ir a mi LinkedIn, Github y más. Programado con React, Next.js y Taildwind CSS.",
+    image: "/images/projects/web3.png",
     tag: ["All", "Web", "Mobile"],
     gitUrl: "/",
     previewUrl: "/",
@@ -75,7 +49,7 @@ const ProjectsSection = () => {
 
   return (
     <>
-      <h2 className=" text-center text-4xl font-bold text-white mt-4 mb-8 md:mb-12">
+      <h2 className=" text-center text-4xl font-bold mt-10 mb-8 md:mb-2 text-transparent bg-clip-text bg-gradient-to-br from-yellow-100 via-yellow-200 to-yellow-300">
         Proyectos
       </h2>
       <div className=" text-white flex flex-row justify-center items-center gap-2 py-6 ">

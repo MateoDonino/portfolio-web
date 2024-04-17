@@ -27,13 +27,11 @@ const HeroSection = () => {
             />
           </h1>
           <p className=" text-[#ADB7BE] text-base sm:text-lg mb-6 lg:text-xl">
-            Apasionado por crear soluciones web innovadoras y eficientes. Domino
-            tecnologías Frontend como HTML5, CSS3, JavaScript y ReactJS, y
-            Backend como Node.js, Express.js, MongoDB, Java y Bases de Datos con
-            SQL. Mi enfoque se basa en la colaboración y la entrega de
-            resultados de alta calidad. Me adapto fácilmente a diferentes
-            entornos y siempre estoy dispuesto a aprender y afrontar nuevos
-            desafíos.
+            Utilizando las últimas tecnologías y frameworks disponibles puedo
+            crear sitios y aplicaciones web a medida que se adapten a tus
+            necesidades específicas. Te puedo asesorar en la selección de la
+            mejor tecnología para tu proyecto, analizar los requisitos y
+            planificar el desarrollo. Te invito a que le des un vistazo a mi CV!
           </p>
           <div>
             {/*<Link href="/contact">
