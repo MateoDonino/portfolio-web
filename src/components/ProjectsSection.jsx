@@ -5,6 +5,17 @@ import ProjectTag from "./ProjectTag";
 
 const projectsData = [
   {
+    id: 2,
+    title: "Aplicacaión Web NodeJS",
+    description:
+      "Aplicación Web simple con NodeJS, la cual nos permite ir de pagina en pagina, la interfaz es ligera y rapida, y está diseñada para usuarios que buscan una navegacion eficaz y sencilla, desplegada en Render.",
+    descriptiontwo: "#JavaScript #NodeJS #Bootstrap",
+    image: "/images/projects/web2.png",
+    tag: ["All", "Web"],
+    gitUrl: "https://github.com/MateoDonino/nodejs-project",
+    previewUrl: "https://nodejs-project-chyw.onrender.com/",
+  },
+  {
     id: 1,
     title: "Api Rick and Morty",
     description:
@@ -16,21 +27,10 @@ const projectsData = [
     previewUrl: "https://dev-challenge-rickymorty.vercel.app/",
   },
   {
-    id: 2,
-    title: "Aplicacaion Web con NodeJS",
-    description:
-      "Aplicacion Web simple con Node JS, la cual nos permite ir de pagina en pagina, la interfaz es ligera y rapida, y está diseñada para usuarios que buscan una navegacion eficaz y sencilla, desplegada en Render. Desarrollada con JavaScript, Nodejs Y Bootstrap.",
-    descriptiontwo: "#JavaScript #NodeJS #Bootstrap",
-    image: "/images/projects/web2.png",
-    tag: ["All", "Web"],
-    gitUrl: "https://github.com/MateoDonino/nodejs-project",
-    previewUrl: "https://nodejs-project-chyw.onrender.com/",
-  },
-  {
     id: 3,
     title: "Porfolio Web",
     description:
-      "Si, este mismo proyecto. Portfolio Web con mi resumen, donde se puede encontrar mi CV como tambien el poder interactuar para poder ir a mi LinkedIn, Github y más. Programado con React, Next.js y Taildwind CSS.",
+      "Si, este mismo proyecto. Portfolio Web con mi resumen, donde se pueden encontrar mis proyectos, como tambien el poder interactuar para poder descargar mi CV, ir a mi LinkedIn, Github y más. Desplegada en Vercel.",
     descriptiontwo: "#React #Next.js #TailwindCSS",
     image: "/images/projects/web3.png",
     tag: ["All", "Mobile"],
