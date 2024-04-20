@@ -4,6 +4,7 @@ import GithubIcon from "../../public/github-icon.svg";
 import LinkedinIcon from "../../public/linkedin-icon.svg";
 import Link from "next/link";
 import Image from "next/image";
+import { motion } from "framer-motion";
 
 const EmailSection = () => {
   const [emailSumbitted, setEmailSumbitted] = useState(false);
@@ -37,7 +38,10 @@ const EmailSection = () => {
   };
 
   return (
-    <section className=" grid md:grid-cols-2 my-12 md:md-12 py-24 gap-4 relative">
+    <section
+      id="contact"
+      className=" grid md:grid-cols-2 my-12 md:md-12 py-24 gap-4 relative"
+    >
       <div className=" z-10">
         <h5 className=" text-xl font-bold text-white my-2">Contactame!</h5>
         <p className="text-[#ADB7BE] mb-4 max-w-lg">

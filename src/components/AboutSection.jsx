@@ -141,7 +141,7 @@ const AboutSection = () => {
       <motion.div
         initial={{ opacity: 0, scale: 0.5 }}
         animate={{ opacity: 1, scale: 1 }}
-        transition={{ duration: 3 }}
+        transition={{ duration: 2.5 }}
         className=" col-span-8 place-self-center text-center sm:text-left justify-self-start"
       >
         <div className=" md:grid md:grid-cols-2 gap-8 items-center py-8 px-4 xl:gap-16 sm:py-16 xl:px-16">

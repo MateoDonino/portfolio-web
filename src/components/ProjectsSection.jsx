@@ -61,21 +61,28 @@ const ProjectsSection = () => {
   return (
     <>
       <section id="proyectos">
-        <h2 className=" text-center text-4xl font-bold mt-10 mb-8 md:mb-2 text-transparent bg-clip-text bg-gradient-to-br from-yellow-100 via-yellow-200 to-yellow-300">
-          Proyectos
-        </h2>
-        <div className=" text-white flex flex-row justify-center items-center gap-2 py-6 ">
-          <ProjectTag
-            onClick={handleTagChange}
-            name="Todos"
-            isSelected={tag === "Todos"}
-          />
-          <ProjectTag
-            onClick={handleTagChange}
-            name="Web"
-            isSelected={tag === "Web"}
-          />
-        </div>
+        <motion.div
+          initial={{ opacity: 0, scale: 0.5 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 2.5 }}
+        >
+          <h2 className=" text-center text-4xl font-bold mt-10 mb-8 md:mb-2 text-transparent bg-clip-text bg-gradient-to-br from-yellow-100 via-yellow-200 to-yellow-300">
+            Proyectos
+          </h2>
+          <div className=" text-white flex flex-row justify-center items-center gap-2 py-6 ">
+            <ProjectTag
+              onClick={handleTagChange}
+              name="Todos"
+              isSelected={tag === "Todos"}
+            />
+            <ProjectTag
+              onClick={handleTagChange}
+              name="Web"
+              isSelected={tag === "Web"}
+            />
+          </div>
+        </motion.div>
+
         <ul ref={ref} className=" grid md:grid-cols-3 gap-8 md:gap-12">
           {filteredProjects.map((project, index) => (
             <motion.li
@@ -83,7 +90,7 @@ const ProjectsSection = () => {
               variants={cardVariants}
               initial="initial"
               animate={isInView ? "animate" : "initial"}
-              transition={{ duration: 0.8, delay: index * 0.4 }}
+              transition={{ duration: 0.6, delay: index * 1 }}
             >
               <ProjectCard
                 key={project.id}
