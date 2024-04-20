@@ -1,5 +1,4 @@
-/* 
-
+/*
 import { github } from "../../../public/images/projects/github.png";
 
 const experiences = [
@@ -18,5 +17,4 @@ const experiences = [
 ];
 
 export { experiences };
-
 */

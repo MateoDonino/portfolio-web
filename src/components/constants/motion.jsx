@@ -1,5 +1,4 @@
 /*
-
 export const textVariant = (delay) => {
   return {
     hidden: {
@@ -17,6 +16,4 @@ export const textVariant = (delay) => {
     },
   };
 };
-
-
 */

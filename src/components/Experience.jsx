@@ -1,5 +1,5 @@
-/* 
-
+/*
+"use client";
 import React from "react";
 import { motion } from "framer-motion";
 import {
@@ -10,6 +10,7 @@ import "react-vertical-timeline-component/style.min.css";
 
 import { experiences } from "../components/constants/index";
 import { textVariant } from "../components/constants/motion";
+import { styles } from "../styles";
 
 const ExperienceCard = ({ experience }) => {
   return (
@@ -64,8 +65,12 @@ const Experience = () => {
   return (
     <>
       <motion.div variants={textVariant()}>
-        <p>Areas de manejo</p>
-        <h2>Conocimientos</h2>
+        <p className={`${styles.sectionSubText} text-center`}>
+          Areas de manejo
+        </p>
+        <h2 className={`${styles.sectionHeadText} text-center`}>
+          Conocimientos
+        </h2>
       </motion.div>
       <div className=" mt-20 flex flex-col">
         <VerticalTimeline>
@@ -82,6 +87,4 @@ const Experience = () => {
 };
 
 export default Experience;
-
-
 */
