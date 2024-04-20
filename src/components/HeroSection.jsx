@@ -40,8 +40,8 @@ const HeroSection = () => {
             planificar el desarrollo. Te invito a que le des un vistazo a mi CV!
           </p>
           <div>
-            <Link href="#contact">
-              <button className=" px-6 py-3 w-full sm:w-fit rounded-full mr-4 bg-gradient-to-br from-yellow-100 via-yellow-200 to-yellow-300 hover:bg-slate-200 text-black">
+            <Link href="#contacto">
+              <button className=" font-semibold px-6 py-3 w-full sm:w-fit rounded-full mr-4 bg-gradient-to-br from-yellow-100 via-yellow-200 to-yellow-300 hover:bg-slate-200 text-black">
                 Contactame
               </button>
             </Link>

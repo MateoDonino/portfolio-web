@@ -39,7 +39,7 @@ const EmailSection = () => {
 
   return (
     <section
-      id="contact"
+      id="contacto"
       className=" grid md:grid-cols-2 my-12 md:md-12 py-24 gap-4 relative"
     >
       <div className=" z-10">
