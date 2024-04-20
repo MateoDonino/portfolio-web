@@ -3,6 +3,7 @@ import React, { useTransition, useState } from "react";
 import Image from "next/image";
 import TabButton from "./TabButton";
 import Link from "next/link";
+import { motion } from "framer-motion";
 
 const TAB_DATA = [
   {
@@ -137,53 +138,61 @@ const AboutSection = () => {
 
   return (
     <section className=" text-white">
-      <div className=" md:grid md:grid-cols-2 gap-8 items-center py-8 px-4 xl:gap-16 sm:py-16 xl:px-16">
-        <Image
-          className=" rounded-xl"
-          src="/images/computer5.png"
-          width={500}
-          height={500}
-        />
-        <div className=" mt-4 md:mt-0 text-left flex flex-col h-full">
-          <h2 className=" text-center text-4xl font-bold mb-4 text-transparent bg-clip-text bg-gradient-to-br from-yellow-100 via-yellow-200 to-yellow-300">
-            Sobre Mi
-          </h2>
-          <p className=" text-[#ADB7BE] text-base lg:text-lg">
-            Apasionado por crear soluciones web innovadoras y eficientes. Domino
-            tecnologías como HTML5, CSS3, JavaScript y ReactJS, y Backend como
-            Node.js, Express.js, MongoDB, Java y Bases de Datos con SQL. Mi
-            enfoque se basa en la colaboración y la entrega de resultados de
-            alta calidad. Me adapto fácilmente a diferentes entornos y siempre
-            estoy dispuesto a aprender y afrontar nuevos desafíos.
-          </p>
-          <div className=" flex flex-row justify-start mt-8">
-            <TabButton
-              selectTab={() => handleTabChange("skills")}
-              active={tab === "skills"}
-            >
-              {" "}
-              Skills
-            </TabButton>
-            <TabButton
-              selectTab={() => handleTabChange("educacion")}
-              active={tab === "educacion"}
-            >
-              {" "}
-              Educación
-            </TabButton>
-            <TabButton
-              selectTab={() => handleTabChange("certificaciones")}
-              active={tab === "certificaciones"}
-            >
-              {" "}
-              Certificaciones
-            </TabButton>
-          </div>
-          <div className=" mt-8">
-            {TAB_DATA.find((t) => t.id === tab).content}
+      <motion.div
+        initial={{ opacity: 0, scale: 0.5 }}
+        animate={{ opacity: 1, scale: 1 }}
+        transition={{ duration: 3 }}
+        className=" col-span-8 place-self-center text-center sm:text-left justify-self-start"
+      >
+        <div className=" md:grid md:grid-cols-2 gap-8 items-center py-8 px-4 xl:gap-16 sm:py-16 xl:px-16">
+          <Image
+            className=" rounded-xl"
+            src="/images/computer5.png"
+            width={500}
+            height={500}
+          />
+          <div className=" mt-4 md:mt-0 text-left flex flex-col h-full">
+            <h2 className=" text-center text-4xl font-bold mb-4 text-transparent bg-clip-text bg-gradient-to-br from-yellow-100 via-yellow-200 to-yellow-300">
+              Sobre Mi
+            </h2>
+            <p className=" text-[#ADB7BE] text-base lg:text-lg">
+              Apasionado por crear soluciones web innovadoras y eficientes.
+              Domino tecnologías como HTML5, CSS3, JavaScript y ReactJS, y
+              Backend como Node.js, Express.js, MongoDB, Java y Bases de Datos
+              con SQL. Mi enfoque se basa en la colaboración y la entrega de
+              resultados de alta calidad. Me adapto fácilmente a diferentes
+              entornos y siempre estoy dispuesto a aprender y afrontar nuevos
+              desafíos.
+            </p>
+            <div className=" flex flex-row justify-start mt-8">
+              <TabButton
+                selectTab={() => handleTabChange("skills")}
+                active={tab === "skills"}
+              >
+                {" "}
+                Skills
+              </TabButton>
+              <TabButton
+                selectTab={() => handleTabChange("educacion")}
+                active={tab === "educacion"}
+              >
+                {" "}
+                Educación
+              </TabButton>
+              <TabButton
+                selectTab={() => handleTabChange("certificaciones")}
+                active={tab === "certificaciones"}
+              >
+                {" "}
+                Certificaciones
+              </TabButton>
+            </div>
+            <div className=" mt-8">
+              {TAB_DATA.find((t) => t.id === tab).content}
+            </div>
           </div>
         </div>
-      </div>
+      </motion.div>
     </section>
   );
 };
