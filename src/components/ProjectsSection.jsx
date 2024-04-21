@@ -9,12 +9,12 @@ const projectsData = [
     id: 1,
     title: "Lutin Studios",
     description:
-      "Proyecto como Freelance, creando una Página Web de promoción de NFT (tokens no fungibles) para un cliente de Chile. El equipo consistió de dos Diseñadores Gráficos y dos Desarrolladores Web. Desplegada en Vercel. ",
+      "Proyecto como Freelance, experiencia labolar, creando una Página Web de promoción de NFT (tokens no fungibles) para un cliente de Chile. El equipo consistió de dos Diseñadores Gráficos y dos Desarrolladores Web. Desplegada en Vercel. ",
     descriptiontwo: "#HTML #CSS #ReactJS #Bootstrap",
     image: "/images/projects/web4.png",
     tag: ["Todos", "Web"],
-    gitUrl: "https://github.com/MateoDonino/nodejs-project",
-    previewUrl: "https://nodejs-project-chyw.onrender.com/",
+    gitUrl: "https://github.com/VarelaCristianFacundo/lutin",
+    previewUrl: "https://lutin-varelacristianfacundo.vercel.app/",
   },
   {
     id: 2,
