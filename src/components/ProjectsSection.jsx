@@ -44,7 +44,7 @@ const projectsData = [
     description:
       "Si, este mismo proyecto. Portfolio Web con mi resumen, donde se pueden encontrar mis proyectos, como tambien el poder interactuar para poder descargar mi CV, ir a mi LinkedIn, Github y más. Desplegada en Vercel.",
     descriptiontwo: "#ReactJS #Next.js #TailwindCSS",
-    image: "/images/projects/web3.png",
+    image: "/images/projects/web5.png",
     tag: ["Todos", "Mobile"],
     gitUrl: "https://github.com/MateoDonino/portfolio-web",
     previewUrl: "/",
