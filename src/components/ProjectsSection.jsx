@@ -6,7 +6,29 @@ import { motion, useInView } from "framer-motion";
 
 const projectsData = [
   {
+    id: 1,
+    title: "Lutin Studios",
+    description:
+      "Proyecto como Freelance, creando una Página Web de promoción de NFT (tokens no fungibles) para un cliente de Chile. El equipo consistió de dos Diseñadores Gráficos y dos Desarrolladores Web. Desplegada en Vercel. ",
+    descriptiontwo: "#HTML #CSS #ReactJS #Bootstrap",
+    image: "/images/projects/web4.png",
+    tag: ["Todos", "Web"],
+    gitUrl: "https://github.com/MateoDonino/nodejs-project",
+    previewUrl: "https://nodejs-project-chyw.onrender.com/",
+  },
+  {
     id: 2,
+    title: "Api Rick and Morty",
+    description:
+      "Api de Rick and Morty que permite a los usuarios buscar y visualizar informacion sobre los personajes. Consta de un campo busqueda y 3 filtros, como asi tambien poder borrarlos y resetear la busqueda, desplegada en Vercel.",
+    descriptiontwo: "#ReactJS #Vite #GraphQL #TailwindCSS",
+    image: "/images/projects/web1.png",
+    tag: ["Todos", "Web"],
+    gitUrl: "https://github.com/MateoDonino/dev-challenge-rickymorty",
+    previewUrl: "https://dev-challenge-rickymorty.vercel.app/",
+  },
+  {
+    id: 3,
     title: "Aplicacaión Web NodeJS",
     description:
       "Aplicación Web simple con NodeJS, la cual nos permite ir de pagina en pagina, la interfaz es ligera y rapida, y está diseñada para usuarios que buscan una navegacion eficaz y sencilla, desplegada en Render.",
@@ -17,22 +39,11 @@ const projectsData = [
     previewUrl: "https://nodejs-project-chyw.onrender.com/",
   },
   {
-    id: 1,
-    title: "Api Rick and Morty",
-    description:
-      "Api de Rick and Morty que permite a los usuarios buscar y visualizar informacion sobre los personajes. Consta de un campo busqueda y 3 filtros, como asi tambien poder borrarlos y resetear la busqueda, desplegada en Vercel.",
-    descriptiontwo: "#React #Vite #GraphQL #TailwindCSS",
-    image: "/images/projects/web1.png",
-    tag: ["Todos", "Web"],
-    gitUrl: "https://github.com/MateoDonino/dev-challenge-rickymorty",
-    previewUrl: "https://dev-challenge-rickymorty.vercel.app/",
-  },
-  {
-    id: 3,
+    id: 4,
     title: "Porfolio Web",
     description:
       "Si, este mismo proyecto. Portfolio Web con mi resumen, donde se pueden encontrar mis proyectos, como tambien el poder interactuar para poder descargar mi CV, ir a mi LinkedIn, Github y más. Desplegada en Vercel.",
-    descriptiontwo: "#React #Next.js #TailwindCSS",
+    descriptiontwo: "#ReactJS #Next.js #TailwindCSS",
     image: "/images/projects/web3.png",
     tag: ["Todos", "Mobile"],
     gitUrl: "https://github.com/MateoDonino/portfolio-web",
@@ -90,7 +101,7 @@ const ProjectsSection = () => {
               variants={cardVariants}
               initial="initial"
               animate={isInView ? "animate" : "initial"}
-              transition={{ duration: 0.6, delay: index * 1 }}
+              transition={{ duration: 0.5, delay: index * 0.8 }}
             >
               <ProjectCard
                 key={project.id}
