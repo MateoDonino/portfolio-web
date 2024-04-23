@@ -11,12 +11,12 @@ const navLinks = [
     path: "#sobre-mi",
   },
   {
-    title: "Proyectos",
-    path: "#proyectos",
+    title: "Experiencia",
+    path: "#experiencia",
   },
   {
-    title: "Contacto",
-    path: "#contacto",
+    title: "Proyectos",
+    path: "#proyectos",
   },
 ];
 
