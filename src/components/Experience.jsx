@@ -162,7 +162,7 @@ const Experience = () => {
             <div className="timeline-end mb-10">
               <time className="text-sm">Agosto - Noviembre 2022</time>
               <div className="text-xl font-bold">Desarrollador Web</div>
-              <div className="text-lg text-blue-400">Lutin Studios</div>
+              <div className="text-lg text-blue-400">LUTIN STUDIOS</div>
 
               <div className="text-[#ADB7BE] text-justify">
                 <p className="mt-1">
