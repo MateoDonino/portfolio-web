@@ -24,7 +24,7 @@ const HeroSection = () => {
                 // Same substring at the start will only be typed out once, initially
                 "Desarrollador Web",
                 5000, // wait 1s before replacing "Mice" with "Hamsters"
-                "Frontend Developer",
+                "Full Stack Developer",
                 5000,
               ]}
               wrapper="span"
@@ -33,11 +33,12 @@ const HeroSection = () => {
             />
           </h1>
           <p className=" text-[#ADB7BE] text-base sm:text-lg mb-6 lg:text-xl">
-            Utilizando las últimas tecnologías y frameworks disponibles puedo
-            crear sitios y aplicaciones web a medida que se adapten a tus
-            necesidades específicas. Te puedo asesorar en la selección de la
-            mejor tecnología para tu proyecto, analizar los requisitos y
-            planificar el desarrollo. Te invito a que le des un vistazo a mi CV!
+            Especializado en el Frontend, utilizando las últimas tecnologías y
+            frameworks disponibles puedo crear sitios y aplicaciones web a
+            medida que se adapten a tus necesidades específicas. Te puedo
+            asesorar en la selección de la mejor tecnología para tu proyecto,
+            analizar los requisitos y planificar el desarrollo. Te invito a que
+            le des un vistazo a mi CV!
           </p>
           <div>
             <Link href="#contacto">

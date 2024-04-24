@@ -157,12 +157,12 @@ const AboutSection = () => {
             </h2>
             <p className=" text-[#ADB7BE] text-base lg:text-lg">
               Apasionado por crear soluciones web innovadoras y eficientes.
-              Domino tecnologías como HTML5, CSS3, JavaScript y ReactJS, y
-              Backend como Node.js, Express.js, MongoDB, Java y Bases de Datos
-              con SQL. Mi enfoque se basa en la colaboración y la entrega de
-              resultados de alta calidad. Me adapto fácilmente a diferentes
-              entornos y siempre estoy dispuesto a aprender y afrontar nuevos
-              desafíos.
+              Domino tecnologías Frontend como HTML5, CSS3, JavaScript y
+              ReactJS, y Backend como Node.js, Express.js, MongoDB, Java y Bases
+              de Datos con SQL. Mi enfoque se basa en la colaboración y la
+              entrega de resultados de alta calidad. Me adapto fácilmente a
+              diferentes entornos y siempre estoy dispuesto a aprender y
+              afrontar nuevos desafíos.
             </p>
             <div className=" flex flex-row justify-start mt-8">
               <TabButton
